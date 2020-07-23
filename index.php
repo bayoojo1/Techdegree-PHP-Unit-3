@@ -11,7 +11,7 @@ include('inc/header.php');
                 foreach(list_entry() as $list) { 
                     echo "<article>";
                         echo "<h2><a href='detail.php?id=" . $list['id'] . "'>" . $list['title'] . "</a></h2>";
-                        echo "<time datetime='" . $list['date'] . "'>" . date("F d, Y", strtotime($list['date'])) . "</time>";
+                        echo "<time style='font-style:italic' datetime='" . $list['date'] . "'>" . date("F d, Y", strtotime($list['date'])) . "</time>";
                     echo "</article>";
                 }
                 ?>
