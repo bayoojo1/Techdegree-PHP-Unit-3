@@ -1,7 +1,7 @@
 <?php 
 require 'inc/functions.php';
 
-$pageTitle = "My Journal";
+$pageTitle = "My Journal | Edit Entry";
 
 if(isset($_GET['id'])) {
     list($id, $title, $date, $time, $learned, $resources) = get_detail(filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT));

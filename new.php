@@ -1,6 +1,6 @@
 <?php 
 require 'inc/functions.php';
-$pageTitle = "My Journal";
+$pageTitle = "My Journal | Add New Entry";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = trim(filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING));
